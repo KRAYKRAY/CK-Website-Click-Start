@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ae360af17e.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Sidebar With Bootstrap</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Sidebar -->
+        <aside id="sidebar">
+            <div class="h-100">
+                <div class="sidebar-logo">
+                    <a href="index.html">Click-Start</a>
+                </div>
+                <!-- Sidebar Navigation -->
+                <ul class="sidebar-nav">
+                    <li class="sidebar-header">
+                        Chris Kray's Components
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link collapsed" data-bs-toggle="collapse" data-bs-target="#pages01"
+                            aria-expanded="false" aria-controls="pages01">
+                            <i class="fa-solid fa-list pe-2"></i>
+                            Profile
+                        </a>
+                        <ul id="pages01" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                            <li class="sidebar-item">
+                                <a href="aboutme.html" class="sidebar-link">About Me</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="designsgallery.html" class="sidebar-link">Designs Gallery</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link">Portfolio & C.V</a>
+                            </li>
+                    </ul>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link collapsed" data-bs-toggle="collapse" data-bs-target="#pages02"
+                            aria-expanded="false" aria-controls="pages02">
+                            <i class="fa-regular fa-file-lines pe-2"></i>
+                            Click-Start Tasks
+                        </a>
+                        <ul id="pages02" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link">UX UI Design</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link">Web Development</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link">Digital Marketing</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link collapsed" data-bs-toggle="collapse" data-bs-target="#pages03"
+                            aria-expanded="false" aria-controls="pages03">
+                            <i class="fa-solid fa-sliders pe-2"></i>
+                            temp
+                        </a>
+                        <ul id="pages03" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link">temp01</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link">temp02</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link collapsed" data-bs-toggle="collapse" data-bs-target="#pages04"
+                            aria-expanded="false" aria-controls="pages04">
+                            <i class="fa-solid fa-sliders pe-2"></i>
+                            temp
+                        </a>
+                        <ul id="pages04" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link">temp01</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link">temp02</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link collapsed" data-bs-toggle="collapse" data-bs-target="#pages05"
+                            aria-expanded="false" aria-controls="pages05">
+                            <i class="fa-solid fa-sliders pe-2"></i>
+                            Click-Start +
+                        </a>
+                        <ul id="pages05" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                            <li class="sidebar-item">
+                                <a href="https://www.bathspa.ac.uk/courses/click-start/" target="_blank" class="sidebar-link">Click-Start course</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="https://www.catch-22.org.uk/" target="_blank" class="sidebar-link">Catch 22</a>
+                            </li>
+                        </ul>      
+                    </li>
+                </ul>
+            </div>
+        </aside>
+        <!-- Main Component -->
+        <div class="main">
+            <nav class="navbar navbar-expand px-3 border-bottom">
+                <!-- Button for sidebar toggle -->
+                <button class="btn" type="button" data-bs-theme="dark">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </nav>
+        <!-- Container for Click-Start typing effect -->    
+            <main class="content px-3 py-2">
+                <div class="container-fluid">
+                    <div class="mb-3">
+                        <h1 class="aboutmetitle">About Me</h1>
+                            <p class="aboutmetext">I have a passion for graphics, photography, motion design, and technology. This has always been a part of my life as a hobby and always wanted to pursue my interest as a career. I spent nearly all my life just working from job to job and never thinking about what I wanted to do as a career. Long period of time I was in France I started to get more and more involved in my passion because of the people around me and the people I worked with. <br><br> I spent four months in India and was able to flourish and understand my strengths and motivation. Studying and photographing wildlife in their natural habitat was a truly life-changing experience and gave me the motivation to start a career as a graphic/motion designer. After a short period of returning from India, I returned to the UK. My career path completely changed and became a carer for a family member so the career in graphics was put on hold because it was very hard to do both.<br><br> Just over four years past as a carer and it got to a point where I could not do it anymore as professional care was needed. Since last year I been trying to get my self back on a correct path and the help I have been getting from Care Centre, which I have great contacts got me on this course with Code Nation. I have always wanted to learn to code but due to the learning load with graphics and motion design in the past, never looked into it in-till now.</p>
+                    </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

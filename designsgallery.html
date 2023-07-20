@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ae360af17e.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Sidebar With Bootstrap</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Sidebar -->
+        <aside id="sidebar">
+            <div class="h-100">
+                <div class="sidebar-logo">
+                    <a href="index.html">Click-Start</a>
+                </div>
+                <!-- Sidebar Navigation -->
+                <ul class="sidebar-nav">
+                    <li class="sidebar-header">
+                        Chris Kray's Components
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link collapsed" data-bs-toggle="collapse" data-bs-target="#pages01"
+                            aria-expanded="false" aria-controls="pages01">
+                            <i class="fa-solid fa-list pe-2"></i>
+                            Profile
+                        </a>
+                        <ul id="pages01" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                            <li class="sidebar-item">
+                                <a href="profile.html" class="sidebar-link">About Me</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="designsgallery.html" class="sidebar-link">Designs Gallery</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link">Portfolio & C.V</a>
+                            </li>
+                    </ul>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link collapsed" data-bs-toggle="collapse" data-bs-target="#pages02"
+                            aria-expanded="false" aria-controls="pages02">
+                            <i class="fa-regular fa-file-lines pe-2"></i>
+                            Click-Start Tasks
+                        </a>
+                        <ul id="pages02" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link">UX UI Design</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link">Web Development</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link">Digital Marketing</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link collapsed" data-bs-toggle="collapse" data-bs-target="#pages03"
+                            aria-expanded="false" aria-controls="pages03">
+                            <i class="fa-solid fa-sliders pe-2"></i>
+                            temp
+                        </a>
+                        <ul id="pages03" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link">temp01</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link">temp02</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link collapsed" data-bs-toggle="collapse" data-bs-target="#pages04"
+                            aria-expanded="false" aria-controls="pages04">
+                            <i class="fa-solid fa-sliders pe-2"></i>
+                            temp
+                        </a>
+                        <ul id="pages04" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link">temp01</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link">temp02</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link collapsed" data-bs-toggle="collapse" data-bs-target="#pages05"
+                            aria-expanded="false" aria-controls="pages05">
+                            <i class="fa-solid fa-sliders pe-2"></i>
+                            Click-Start +
+                        </a>
+                        <ul id="pages05" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                            <li class="sidebar-item">
+                                <a href="https://www.bathspa.ac.uk/courses/click-start/" target="_blank" class="sidebar-link">Click-Start course</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="https://www.catch-22.org.uk/" target="_blank" class="sidebar-link">Catch 22</a>
+                            </li>
+                        </ul>      
+                    </li>
+                </ul>
+            </div>
+        </aside>
+        <!-- Main Component -->
+        <div class="main">
+            <nav class="navbar navbar-expand px-3 border-bottom">
+                <!-- Button for sidebar toggle -->
+                <button class="btn" type="button" data-bs-theme="dark">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </nav>
+        <!-- Gallery Carousel-->    
+            <main class="content mt-5 px-3 py-3">
+                <div id="carouseldesigns" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouseldesigns" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouseldesigns" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouseldesigns" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouseldesigns" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                        <button type="button" data-bs-target="#carouseldesigns" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                        <button type="button" data-bs-target="#carouseldesigns" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                        <button type="button" data-bs-target="#carouseldesigns" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                        <button type="button" data-bs-target="#carouseldesigns" data-bs-slide-to="7" aria-label="Slide 8"></button>
+                        <button type="button" data-bs-target="#carouseldesigns" data-bs-slide-to="8" aria-label="Slide 9"></button>
+                        <button type="button" data-bs-target="#carouseldesigns" data-bs-slide-to="9" aria-label="Slide 10"></button>
+                        <button type="button" data-bs-target="#carouseldesigns" data-bs-slide-to="10" aria-label="Slide 11"></button>
+
+                      </div>
+        <!-- Slide image 01 -->
+                    <div class="carousel-inner">
+                      <div class="carousel-item active c-item">
+                        <img src="images/iphoneXblack.jpg" class="d-block w-100 c-img" alt="...">
+                        <div class="carousel-caption top-0 mt-4 d-none d-md-block">
+                            <p class="mt-5 fs-3">iPhone X Renders</p>
+                            <h1 class="display-4 fw-bolder">iPhone Black</h1>
+                            <a href="https://www.flickr.com/photos/85208536@N02/albums" class="btn btn-dark btn-sm mt-5" role="button">More Photos</a>
+                        </div>
+                      </div>
+        <!-- Slide image 02 -->              
+                      <div class="carousel-item c-item">
+                        <img src="images/iphoneXyellowflat.jpg" class="d-block w-100 c-img" alt="...">
+                        <div class="carousel-caption top-0 mt-4 d-none d-md-block">
+                            <p class="mt-5 fs-3">iPhone X Renders</p>
+                            <h1 class="display-4 fw-bolder">iPhone Yellow</h1>
+                            <a href="https://www.flickr.com/photos/85208536@N02/albums" class="btn btn-dark btn-sm mt-5" role="button">More Photos</a>
+                        </div>
+                      </div>
+        <!-- Slide image 03 -->
+                      <div class="carousel-item c-item">
+                        <img src="images/iphoneXmulti.jpg" class="d-block w-100 c-img" alt="...">
+                        <div class="carousel-caption top-0 mt-4 d-none d-md-block">
+                            <p class="mt-5 fs-3">iPhone X Renders</p>
+                            <h1 class="display-4 fw-bolder">iPhone Multi Color</h1>
+                            <a href="https://www.flickr.com/photos/85208536@N02/albums" class="btn btn-dark btn-sm mt-5" role="button">More Photos</a>
+                        </div>
+                      </div>
+        <!-- Slide image 04 -->                     
+                      <div class="carousel-item c-item">
+                        <img src="images/iphoneXblackflat.jpg" class="d-block w-100 c-img" alt="...">
+                        <div class="carousel-caption top-0 mt-4 d-none d-md-block">
+                            <p class="mt-5 fs-3">iPhone X Renders</p>
+                            <h1 class="display-4 fw-bolder">iPhone Black</h1>
+                            <a href="https://www.flickr.com/photos/85208536@N02/albums" class="btn btn-dark btn-sm mt-5" role="button">More Photos</a>
+                        </div>
+                      </div>
+        <!-- Slide image 05 -->
+                      <div class="carousel-item c-item">
+                        <img src="images/shinninghallway.jpg" class="d-block w-100 c-img" alt="...">
+                        <div class="carousel-caption top-0 mt-4 d-none d-md-block">
+                            <p class="mt-5 fs-3">Film Scene Renders</p>
+                            <h1 class="display-4 fw-bolder">Shinning Hallway</h1>
+                            <a href="https://www.flickr.com/photos/85208536@N02/albums" class="btn btn-dark btn-sm mt-5" role="button">More Photos</a>
+                        </div>
+                      </div>
+        <!-- Slide image 06 -->
+                      <div class="carousel-item c-item">
+                        <img src="images/canonnlimpet.jpg" class="d-block w-100 c-img" alt="...">
+                        <div class="carousel-caption top-0 mt-4 d-none d-md-block">
+                            <p class="mt-5 fs-3">Elite Dangerous Renders</p>
+                            <h1 class="display-4 fw-bolder">3D Limpet Model</h1>
+                            <a href="https://www.flickr.com/photos/85208536@N02/albums" class="btn btn-dark btn-sm mt-5" role="button">More Photos</a>
+                        </div>
+                      </div>
+        <!-- Slide image 07 -->
+                      <div class="carousel-item c-item">
+                        <img src="images/canonnlimpetfly.jpg" class="d-block w-100 c-img" alt="...">
+                        <div class="carousel-caption top-0 mt-4 d-none d-md-block">
+                            <p class="mt-5 fs-3">Elite Dangerous Renders</p>
+                            <h1 class="display-4 fw-bolder">3D Limpet Flying</h1>
+                            <a href="https://www.flickr.com/photos/85208536@N02/albums" class="btn btn-dark btn-sm mt-5" role="button">More Photos</a>
+                        </div>
+                      </div>
+        <!-- Slide image 08 -->
+                      <div class="carousel-item c-item">
+                        <img src="images/canonntesttube.jpg" class="d-block w-100 c-img" alt="...">
+                        <div class="carousel-caption top-0 mt-4 d-none d-md-block">
+                            <p class="mt-5 fs-3">Elite Dangerous Renders</p>
+                            <h1 class="display-4 fw-bolder">Testtube Probe </h1>
+                            <a href="https://www.flickr.com/photos/85208536@N02/albums" class="btn btn-dark btn-sm mt-5" role="button">More Photos</a>
+                        </div>
+                      </div>
+        <!-- Slide image 09 -->
+                      <div class="carousel-item c-item">
+                        <img src="images/officeconcept01.jpg" class="d-block w-100 c-img" alt="...">
+                        <div class="carousel-caption top-0 mt-4 d-none d-md-block">
+                            <p class="mt-5 fs-3">Office Concept Renders</p>
+                            <h1 class="display-4 fw-bolder">Office Design 01</h1>
+                            <a href="https://www.flickr.com/photos/85208536@N02/albums" class="btn btn-dark btn-sm mt-5" role="button">More Photos</a>
+                        </div>
+                      </div>
+        <!-- Slide image 10 -->
+                      <div class="carousel-item c-item">
+                        <img src="images/officeconcept02.jpg" class="d-block w-100 c-img" alt="...">
+                        <div class="carousel-caption top-0 mt-4 d-none d-md-block">
+                            <p class="mt-5 fs-3">Office Concept Renders</p>
+                            <h1 class="display-4 fw-bolder">Office Design 02</h1>
+                            <a href="https://www.flickr.com/photos/85208536@N02/albums" class="btn btn-dark btn-sm mt-5" role="button">More Photos</a>
+                        </div>
+                      </div>
+        <!-- Slide image 11 -->
+                      <div class="carousel-item c-item">
+                        <img src="images/officeconceptmac.jpg" class="d-block w-100 c-img" alt="...">
+                        <div class="carousel-caption top-0 mt-4 d-none d-md-block">
+                            <p class="mt-5 fs-3">Apple Mac Renders</p>
+                            <h1 class="display-4 fw-bolder">Apple Mac</h1>
+                            <a href="https://www.flickr.com/photos/85208536@N02/albums" class="btn btn-dark btn-sm mt-5" role="button">More Photos</a>
+                        </div>
+                      </div>
+
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouseldesigns" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#carouseldesigns" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                  </div>
+                </div>
+            </main>
+        </div>
+    </div>
+     <!-- Gallery Carousel-->  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
